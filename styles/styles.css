@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin: 15px;
+    font-size: 25px;
+    
+}
+
+nav{
+    margin: 0;
+    float: right;
+    padding-right: 100px;
+    margin-top: 40px;
+    background-color: rgb(43, 43, 43);
+}
+
+nav a{
+    color:aliceblue;
+}
+
+body{
+    margin: 0;
+}
