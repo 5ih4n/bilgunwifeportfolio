@@ -1,25 +1,154 @@
 ul{
     list-style: none;
 }
-nav li{
-    display: inline;
-    margin: 15px;
-    font-size: 25px;
-    
+
+body{
+    margin: 0;
 }
 
+h1{
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+#logo{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 260px;
+    height: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 140px;
+}
 nav{
     margin: 0;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    float: right;
+    background-color: rgb(43, 43, 43);
+    width: 52%;
+}
+
+nav li{
+    display: inline;
+    margin: 0px;
+    font-size: 190%;
+}
+nav a{
+    padding:15px;
+}
+nav ul{
     float: right;
     padding-right: 100px;
-    margin-top: 40px;
-    background-color: rgb(43, 43, 43);
+    margin: 15px;
 }
 
 nav a{
     color:aliceblue;
 }
 
-body{
-    margin: 0;
+#minigallery{
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
+
+#gallerycolumns{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#imgsmall{
+    display: block;
+    width: 180px;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+
+#imgmedium{
+    display: block;
+    float: right;
+    border-radius: 10%;
+    width: 230px;
+    margin: 40px;
+}
+
+#imglarge{
+    margin-top: 80px;
+    display: block;
+    margin-top: 120px;
+    margin-left: 60px;
+    border-radius: 10%;
+    width: 330px;
+}
+
+#homepagebtns{
+    overflow: hidden;
+    width: 100%;
+    height: 900px;
+}
+
+#gallerylink{
+    margin-top: 190px;
+    width: 45%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(35, 35, 35);
+}
+
+#gallerylink img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    clip-path: polygon(100% 0, 0% 0, 0% 100%, 100% 50%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#gallerylink a{
+    float: right;
+    font-size: 3vw;
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    color: white;
+}
+
+#shoplink {
+    width: 45%;
+    height: 280px;
+    float: right;
+    margin-top: 60px;
+    background-color: rgb(39, 39, 39);
+    position: relative;
+}
+
+#shoplink img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    clip-path: polygon(100% 0, 0% 0, 0% 50%, 100% 100%) 
+}
+
+#shoplink a{
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+
+
+
