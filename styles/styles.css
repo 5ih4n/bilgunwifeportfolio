@@ -31,8 +31,8 @@ a::after{
     left: 0;
     bottom: 0;
     background-color: white;
-    transition: 0.3s ease-in-out;
-    height: 3px;
+    transition:0.3s ease-in-out;
+    height: 2px;
 }
 
 a:hover::after{
@@ -54,6 +54,7 @@ nav{
 }
 
 nav li{
+    position: relative;
     margin: 0px;
     font-size: 190%;
 }
@@ -137,8 +138,8 @@ h1{
 
 #gallerylink{
     margin-top: 190px;
-    width: 45%;
-    height: 17vw;
+    width: 35vw;
+    height: 15vw;
     overflow: hidden;
     position: relative;
     background-color: rgb(35, 35, 35);
@@ -148,14 +149,14 @@ h1{
     width: 100%;
     height: 100%;
     filter: brightness(80%);
-    clip-path: polygon(100% 0, 0% 0, 0% 100%, 100% 50%);
+    clip-path: polygon(100% 0, 0% 0, 0% 100%, 100% 60%);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #gallerylink a{
     float: right;
-    font-size: 3vw;
+    font-size: 2.5vw;
     position: absolute;
     bottom: 10px;
     right: 10%;
@@ -163,8 +164,8 @@ h1{
 }
 
 #shoplink {
-    width: 45%;
-    height: 17vw;
+    width: 35vw;
+    height: 15vw;
     float: right;
     margin-top: 60px;
     background-color: rgb(39, 39, 39);
@@ -175,12 +176,12 @@ h1{
     width: 100%;
     height: 100%;
     filter: brightness(80%);
-    clip-path: polygon(100% 0, 0% 0, 0% 50%, 100% 100%) 
+    clip-path: polygon(100% 0, 0% 0, 0% 60%, 100% 100%) 
 }
 
 #shoplink a{
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
     position: absolute;
     bottom: 20px;
     left: 30px;
