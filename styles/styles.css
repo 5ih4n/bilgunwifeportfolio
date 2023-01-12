@@ -28,15 +28,16 @@ a::after{
     content: "";
     position: absolute;
     width: 0;
-    left: 0;
+    left: 50%;
     bottom: 0;
     background-color: white;
-    transition:0.3s ease-in-out;
+    transition: 0.3s ease;
     height: 2px;
 }
 
 a:hover::after{
     width:100%;
+    left: 0;
 }
 
 header{
@@ -103,6 +104,23 @@ h1{
     margin-bottom: 80px;
 }
 
+.hidden{
+    opacity: 0;
+    transform: translateY(12%);
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
 #imgsmall{
     display: block;
     width: 30%;
@@ -133,7 +151,7 @@ h1{
 #homepagebtns{
     overflow: hidden;
     width: 100%;
-    height: 900px;
+    height: 600px;
 }
 
 #gallerylink{
@@ -192,8 +210,27 @@ hr{
 }
 
 footer{
+    position: relative;
+    bottom: 0px;
     height: 160px;
     width: 100%;
+    background-color:rgb(43, 43, 43);
+    text-align: center;
+}
+
+.fcolumn1{
+    padding: 2% 0;
+    float: left;
+    margin-left: 3%;
+}
+.flinks li{
+    display: inline-block;
+    margin-left: 30px;
+}
+footer a{
+    position: relative;
+    font-size: 1.5vw;
+    color: aliceblue;
 }
 
 .icons{

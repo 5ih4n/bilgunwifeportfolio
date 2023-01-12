@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/a8926b4801.js" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+    <script defer src="scripts/main.js"></script>
     <title>Janver Art</title>
 </head>
 <body>
@@ -26,25 +27,34 @@
         <div id="gallerycolumns">
             <img src="images/art/stackedgallery.PNG" alt="" id="stackedgallery">
             <h1>Modern Digital Art</h1>
-            <img src="images/art/128925776_405272277335541_1951505590802491942_n.jpg" alt="" id="imgsmall">
-            <img src="images/art/241083086_249063137093738_5263206175174024054_n.jpg" alt="" id="imgmedium">
-            <img src="images/art/240579337_424743709071423_2370204039553172486_n.jpg" alt=""  id="imglarge">
+            <img src="images/art/128925776_405272277335541_1951505590802491942_n.jpg" alt="" id="imgsmall" class="hidden">
+            <img src="images/art/241083086_249063137093738_5263206175174024054_n.jpg" alt="" id="imgmedium"  class="hidden">
+            <img src="images/art/240579337_424743709071423_2370204039553172486_n.jpg" alt=""  id="imglarge"  class="hidden">
         </div>
     </div>
     <section id="homepagebtns">
-        <div id="gallerylink">
-            <img src="images/art/gallerybutton.jpg" alt="uh oh">
-            <a href="#">Gallery</a>
-        </div>
-        <div id="shoplink">
+        <div id="shoplink" class="hidden">
             <img src="images/art/shopbutton.jpg" alt="uh oh">
             <a href="#">Shop</a>
         </div>
+
+        <div id="gallerylink" class="hidden">
+            <img src="images/art/gallerybutton.jpg" alt="uh oh">
+            <a href="#">Gallery</a>
+        </div>
     </section>
     <footer>
-        <hr>
-        <div class="icons">
-            <i class="fa-brands fa-instagram fa-5x"></i>
+        <div class="fcolumn1">
+            <ul class="flinks">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="fcolumn2">
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 </body>
