@@ -62,7 +62,7 @@ nav{
     border-top-left-radius: 15px;
     float: right;
     background-color: rgb(43, 43, 43);
-    width: 45%;
+    padding-right: 70px;
 }
 
 nav li{
@@ -222,7 +222,7 @@ h2{
 }
 
 .gallery{
-    margin-top: 86px;
+    margin-top: 6vw;
     display: flex;
     flex-wrap: wrap;
     padding: 0 90px;
@@ -245,32 +245,28 @@ h2{
 
 #shopdiv{
     width: 100%;
+    height: 30vw;
     margin-bottom: 80px;
     margin-top: 40px;
-}
-
-#shopbackground{
-    height: 130px;
-    width: 100%;
+    background-image: url("/images/Vector\ 5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 h3{
-    position: absolute;
-    top: 20vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
     left: 150px;
+    width: fit-content;
     font-size: 4vw;
 }
 
-#shopdiv img{
-    width: 100%;
-    height: 100%;
-}
-
 #redbubble{
-    position: absolute;
-    font-size: 7vw;
-    top: 22vw;
-    right: 15vw;
+    position: relative;
+    font-size: 6vw;
+    float: right;
+    right: 12vw;
     transition: 0.5s ease-in-out;
     color: red;
 }
@@ -278,15 +274,8 @@ h3{
 #redbubble::after{
     color: red;
     background-color: red;
-    height: 2px;
+    height: 10px;
 }
-
-#redbubble:hover{
-    transform: scale(1.1);
-    color: red;
-}
-
-
 
 footer{
     position: relative;
@@ -313,7 +302,7 @@ footer{
 }
 footer a{
     position: relative;
-    font-size: 1.8vw;
+    font-size: 35px;
     color: aliceblue;
 }
 
