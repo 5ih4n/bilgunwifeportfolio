@@ -7,7 +7,18 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
-
 const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el) => observer.observe(el));
+
+const images = document.querySelector(".gallery img")
+const modal = document.querySelector(".modal")
+const modalImg = document.querySelector(".modalImg")
+const modalTxt = document.querySelector(".modalTxt")
+const close = document.querySelector(".modalClose")
+
+images.forEach((image) => {
+    image.addEventListener("click", () => {
+        modal.classList.add("appear")
+    })
+})
