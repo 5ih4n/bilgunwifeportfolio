@@ -87,7 +87,7 @@ nav a{
 }
 
 #minigallery{
-    height: 88vw;
+    height: 94vw;
     flex-wrap: wrap;
     padding: 0 4px;
 }
@@ -134,7 +134,7 @@ h1{
 
 #imgsmall{
     display: block;
-    width: 30%;
+    width: 35%;
     float: left;
     border-radius: 10%;
     margin-top: 80px;
@@ -145,7 +145,7 @@ h1{
     display: block;
     float: right;
     border-radius: 10%;
-    width: 30%;
+    width: 35%;
     margin-left: 80%;
     margin-top: -100px;
     margin-bottom: -100px;
@@ -153,7 +153,7 @@ h1{
 
 #imglarge{
     display: block;
-    width: 30%;
+    width: 35%;
     border-radius: 10%;
     margin-top: 80px;
     margin-left: 10%;
@@ -250,19 +250,37 @@ h2{
     height: 100%;
     top: 0;
     left: 0;
+    opacity: 0;
+    pointer-events: none;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modalcontent{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    overflow: auto;
 }
 
 .modal img{
-    width: 40%;
-    height: auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal.appear{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalClose{
+    font-size: 3vw;
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    cursor: pointer;
+    color: white;
 }
 
 #shopdiv{
@@ -279,7 +297,7 @@ h3{
     position: relative;
     top: 50%;
     transform: translateY(-100%);
-    left: 150px;
+    left: 10vw;
     width: fit-content;
     font-size: 4vw;
 }
