@@ -20,6 +20,8 @@ const close = document.querySelector(".modalClose");
 images.forEach((image) => {
     image.addEventListener("click", () => {
         modal.classList.add("appear");
+        modalImg.src = image.src;
+        modalTxt.innerHTML = image.alt;
     });
 
     close.addEventListener("click", () => {

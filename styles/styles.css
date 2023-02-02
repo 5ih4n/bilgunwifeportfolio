@@ -196,7 +196,7 @@ h1{
     height: 15vw;
     float: right;
     margin-top: 60px;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(35, 35, 35);
     position: relative;
 }
 
@@ -322,7 +322,7 @@ footer{
     bottom: 0px;
     height: 160px;
     width: 100%;
-    background-color:rgb(43, 43, 43);
+    background-color:rgb(35, 35, 35);
     text-align: center;
 }
 
