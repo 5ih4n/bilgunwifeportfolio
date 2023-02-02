@@ -87,7 +87,7 @@ nav a{
 }
 
 #minigallery{
-    height: 94vw;
+    height: 97vw;
     flex-wrap: wrap;
     padding: 0 4px;
 }
@@ -241,6 +241,12 @@ h2{
     height: auto;
     vertical-align: middle;
     width: 100%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.column img:hover{
+    transform: scale(0.98);
 }
 
 .modal{
@@ -265,7 +271,7 @@ h2{
 }
 
 .modal img{
-    width: 80%;
+    width: 40%;
     max-width: 700px;
 }
 
@@ -281,6 +287,20 @@ h2{
     top: 2vw;
     cursor: pointer;
     color: white;
+}
+
+.modal.appear .modalImg,
+.modal.appear .modalTxt{
+    animation: zoom 0.1s linear;
+}
+
+@keyframes zoom{
+    from {
+        transform: scale(0);
+    }
+    top {
+        transform: scale(1);
+    }
 }
 
 #shopdiv{
@@ -317,6 +337,34 @@ h3{
     height: 10px;
 }
 
+#contactDiv{
+    height: 50vw;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: top;
+}
+
+#nameIn{
+    width: 20vw;
+    height: 5vh;
+    margin: 10px;
+}
+
+#mailIn{
+    width: 20vw;
+    height: 5vh;
+    margin: 10px;
+}
+
+#messageIn{
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+}
 footer{
     position: relative;
     bottom: 0px;
