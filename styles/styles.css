@@ -227,6 +227,12 @@ h2{
     flex-wrap: wrap;
     padding: 0 90px;
     margin-bottom: 90px;
+    background-image: -webkit-linear-gradient(top, transparent, rgb(241, 215, 149) 20%, rgb(241, 215, 149) 80%, transparent 100%);
+}
+
+hr{
+    border: 2px solid black;
+    width: 80%;
 }
 
 .column{
@@ -289,6 +295,12 @@ h2{
     color: white;
 }
 
+.modalTxt{
+    color: white;
+    max-width: 50%;
+    font-size: large;
+}
+
 .modal.appear .modalImg,
 .modal.appear .modalTxt{
     animation: zoom 0.1s linear;
@@ -345,26 +357,66 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: top;
+    max-width: 30%;
+    float: right;
+    border: solid;
+    padding: 30px;
+}
+
+input{
+    border-bottom: 5px black;
+    border: none;
+    border-bottom: solid;
+    transition: ease-in-out 0.2s;
+}
+
+input[type=text]:focus{
+    outline: none;
+    border-bottom: solid rgb(218, 192, 126);
 }
 
 #nameIn{
-    width: 20vw;
+    font-size: 1vw;
+    width: 80%;
     height: 5vh;
     margin: 10px;
 }
 
 #mailIn{
-    width: 20vw;
+    font-size: 1vw;
+    width: 80%;
     height: 5vh;
     margin: 10px;
 }
 
+h4{
+    left: 0;
+    font-size: 25px;
+    margin: 0;
+}
 #messageIn{
-    width: 20vw;
+    font-size: 20px;
+    width: 90%;
     height: 20vw;
     margin: 10px;
+    border: solid;
 }
+
+#messageIn:focus{
+    outline: none;
+    border: solid rgb(241, 215, 149);
+    transition: 0.2s ease-in-out;
+}
+
+#sendBtn{
+    width: 20%;
+    height: 10%;
+    margin: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 footer{
     position: relative;
     bottom: 0px;
