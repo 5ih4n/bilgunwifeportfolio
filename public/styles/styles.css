@@ -356,11 +356,11 @@ h3{
 #contactForm{
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 30%;
     float: right;
     border: solid;
     padding: 30px;
+    margin-right: 100px;
 }
 
 input{
@@ -378,19 +378,20 @@ input[type=text]:focus{
 #nameIn{
     font-size: 1vw;
     width: 80%;
-    height: 5vh;
+    height: 4vh;
     margin: 10px;
 }
 
 #mailIn{
     font-size: 1vw;
     width: 80%;
-    height: 5vh;
+    height: 4vh;
     margin: 10px;
 }
 
 h4{
-    left: 0;
+    width: 100%;
+    padding-left: 10px;
     font-size: 25px;
     margin: 0;
 }
