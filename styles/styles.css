@@ -3,6 +3,8 @@ ul{
 }
 
 body{
+    position: relative;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -232,7 +234,7 @@ h1{
     font-size: 3vw;
     position: absolute;
     bottom: 10px;
-    right: 10%;
+    right: 30px;
 }
 
 #shoplink {
@@ -259,14 +261,14 @@ h1{
 }
 
 h2{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
     font-size: 3vw;
+    width: 100%;
+    text-align: center;
 }
 
 .gallery{
-    margin-top: 6vw;
+    margin-top: 1vw;
     display: flex;
     flex-wrap: wrap;
     padding: 0 90px;
@@ -469,9 +471,10 @@ h4{
     font-size: 25px;
     margin: 0;
 }
+
 #messageIn{
     font-size: 20px;
-    width: 90%;
+    width: 80%;
     height: 20vw;
     margin: 10px;
     border: solid;
@@ -486,7 +489,7 @@ h4{
 #sendBtn{
     color: white;
     background-color: rgb(35, 35, 35);
-    width: 20%;
+    width: fit-content;
     height: 10%;
     margin: 10px;
     border-style: none;
@@ -496,6 +499,7 @@ h4{
 
 #aboutSection{
     width: 100%;
+    height: 47vw;
 }
 
 #aboutSection img{
@@ -530,6 +534,7 @@ h6{
 }
 
 footer{
+    bottom: 0;
     position: relative;
     bottom: 0px;
     height: 160px;
@@ -546,6 +551,7 @@ footer{
 
 .fcolumn2{
     padding: 3% 0;
+    height: fit-content;
 }
 
 .flinks li{
@@ -559,15 +565,52 @@ footer a{
 }
 
 .icons{
+    display: flex;
+    justify-content: space-between;
     float: right;
     margin-right: 110px;
-}
-
-.fa-facebook{
-    margin: 20px;
+    width: 90px;
 }
 
 @media screen and (max-width: 1200px) {
+    nav{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-bottom: 70px;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-top: 70px;
+        flex-direction: column;
+        max-height: 0px;
+        transition: ease-in-out 0.5s;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: ease-in-out 1s;
+    }
+
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a{
+        font-size: 30px;
+    }
+
+    #logo{
+        display: none;
+    }
     .column {
         flex: 45%;
         max-width: 50%;
@@ -582,8 +625,14 @@ footer a{
         margin-top: 0px;
     }
 
+    body{
+        height: fit-content;
+    }
+
     .gallery{
         padding: 0;
+        max-height: fit-content;
+        width: 100%;
     }
 
     h1{
@@ -594,6 +643,13 @@ footer a{
         display: block;
         float: none;
         font-size: 30px;
+    }
+
+    h2{
+        font-size: 6vw;
+        position: static;
+        height: fit-content;
+        margin: 0;
     }
 
     #imgsmall{
@@ -625,18 +681,27 @@ footer a{
     }
 
     #shoplink{
-        width: 60%;
+        width: 70%;
         margin-bottom: 50px;
-        height: 25vw;
+        height: 30vw;
+    }
+
+    #shoplink a{
+        font-size: 5vw;
     }
 
     #homepagebtns{
         height: fit-content;
         margin-bottom: 50px;
     }
+
     #gallerylink{
-        width: 60%;
-        height: 25vw;
+        width: 70%;
+        height: 30vw;
+    }
+
+    #gallerylink a{
+        font-size: 5vw;
     }
 
     #stackedGallery{
@@ -650,46 +715,80 @@ footer a{
         font-size: 20px;
     }
 
-    nav{
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        margin-bottom: 70px;
+    #galleryColumns{
+        height: fit-content;
     }
 
-    nav ul{
-        padding: 0;
-        margin: 0;
+    #contactDiv{
         width: 100%;
-        margin-top: 70px;
+        height: max-content;
+        display: flex;
         flex-direction: column;
-        max-height: 0px;
-        transition: ease-in-out 0.5s;
+        align-items: center;
     }
-
-    #menuList{
-        overflow: hidden;
-        transition: ease-in-out 1s;
-    }
-
-    nav ul li{
-        width: 100%;
+    
+    #contactInfo{
+        float: none;
         text-align: center;
-        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
     }
 
-    nav ul li a{
+    h5{
+        left: 0;
+        margin: 0;
+        font-size: 10vw;
+    }
+
+    #contactInfo p{
+        left: 0;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #contactForm{
+        float: none;
+        margin: 0;
+        padding: 1%;
+        margin-bottom: 50px;
+        width: 70%;
+        max-width: none;
+    }
+
+    #nameIn{
+        font-size: 100%;
+    }
+    
+    #mailIn{
+        font-size: 100%;
+    }
+
+    #messageIn{
+        width: 80%;
+        height: 70%;
+    }
+
+    #aboutSection{
+        height: max-content;
+    }
+
+    #aboutSection img{
+        width: 80%;
+        margin: 0;
+    }
+    
+    h6{
         font-size: 30px;
     }
 
-    #logo{
-        display: none;
+    #aboutTexts{
+        flex-direction: column;
     }
 
-    #galleryColumns{
-        height: fit-content;
+    #aboutTexts p{
+        font-size: 15px;
     }
 
     .flinks{
@@ -701,16 +800,27 @@ footer a{
     }
 
     .icons{
-        float: left;
+        margin: auto;
+        float: none;
+        width: 70px;
     }
 
     footer a{
         font-size: 30px;
     }
 
+    footer{
+        height: max-content;
+    }
+
     .fcolumn1{
         width: 100%;
         margin: 0;
+        float: none;
+    }
+
+    .fcolumn2{
+        padding-top: 0;
     }
 }
 

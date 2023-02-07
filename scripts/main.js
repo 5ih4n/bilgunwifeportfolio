@@ -4,6 +4,7 @@ const images = document.querySelectorAll(".gallery img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
+const modalContent = document.querySelector(".modalcontent");
 const close = document.querySelector(".modalClose");
 const hiddenElements = document.querySelectorAll('.hidden');
 
@@ -16,10 +17,13 @@ images.forEach((image) => {
         modalTxt.innerHTML = image.alt;
         console.log("pung");
     });
-
+    modalContent.addEventListener("click", () => {
+        modal.classList.remove("appear");
+    })
     close.addEventListener("click", () => {
         modal.classList.remove("appear");
     });
+
 });
 
 icon.onclick = () => {
