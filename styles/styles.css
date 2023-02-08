@@ -6,6 +6,29 @@ body{
     position: relative;
     min-height: 100vh;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-image: url(/images/Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+#backgroundCover{
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    background-image : linear-gradient(to bottom, 
+    rgba(255,255,255, 0), 
+    rgba(255,255,255, 1) 50%);
+    position: fixed;
+    height: 50vh;
 }
 
 h1{
@@ -154,6 +177,7 @@ h1{
     text-align: center;
     float: left;
 }
+
 #stackedGallery{
     width: 50%;
     margin-top: 50px;
@@ -323,7 +347,7 @@ hr{
 }
 
 .modal img{
-    width: 40%;
+    width: 35%;
     max-width: 700px;
 }
 
@@ -573,7 +597,7 @@ footer a{
     width: 90px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     nav{
         width: 100%;
         border-radius: 0;
@@ -634,6 +658,10 @@ footer a{
         padding: 0;
         max-height: fit-content;
         width: 100%;
+    }
+
+    #backgroundCover{
+        height: 30%;
     }
 
     h1{
