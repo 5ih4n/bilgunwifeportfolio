@@ -10,6 +10,9 @@ const close = document.querySelector(".modalClose");
 
 const hiddenElements = document.querySelectorAll('.hidden');
 
+const shopLink = document.getElementById("shoplink")
+const galleryLink = document.getElementById("gallerylink")
+
 menuList.style.maxHeight = "0px";
 
 images.forEach((image) => {
@@ -43,6 +46,14 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
+
+shopLink.onclick = () => {
+    window.location.href = "shop.html";
+};
+
+galleryLink.onclick = () => {
+    window.location.href = "gallery.html";
+};
 
 hiddenElements.forEach((el) => observer.observe(el));
 

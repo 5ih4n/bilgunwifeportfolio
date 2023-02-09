@@ -1,12 +1,17 @@
 const menuList = document.getElementById("menuList");
 const icon = document.querySelector('.navburger');
+
 const images = document.querySelectorAll(".gallery img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
 const modalContent = document.querySelector(".modalcontent");
 const close = document.querySelector(".modalClose");
+
 const hiddenElements = document.querySelectorAll('.hidden');
+
+const shopLink = document.getElementById("shoplink")
+const galleryLink = document.getElementById("gallerylink")
 
 menuList.style.maxHeight = "0px";
 
@@ -41,6 +46,14 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
+
+shopLink.onclick = () => {
+    window.location.href = "shop.html";
+};
+
+galleryLink.onclick = () => {
+    window.location.href = "gallery.html";
+};
 
 hiddenElements.forEach((el) => observer.observe(el));
 
