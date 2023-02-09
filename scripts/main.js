@@ -1,11 +1,13 @@
 const menuList = document.getElementById("menuList");
 const icon = document.querySelector('.navburger');
+
 const images = document.querySelectorAll(".gallery img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
 const modalContent = document.querySelector(".modalcontent");
 const close = document.querySelector(".modalClose");
+
 const hiddenElements = document.querySelectorAll('.hidden');
 
 menuList.style.maxHeight = "0px";
