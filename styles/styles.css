@@ -423,7 +423,6 @@ h3{
     overflow: hidden;
 }
 
-
 .shopItem img{
     width: 80%;
     position: relative;
@@ -437,7 +436,7 @@ h3{
 }
 
 .shopItem button{
-    margin: 30px;
+    margin: 15px;
 }
 
 #cartBtn{
