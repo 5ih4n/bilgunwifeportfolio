@@ -398,16 +398,6 @@ hr{
     }
 }
 
-#shopdiv{
-    width: 100%;
-    height: 30vw;
-    margin-bottom: 80px;
-    margin-top: 40px;
-    background-image: url("/images/Vector\ 5.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 h3{
     position: relative;
     top: 50%;
@@ -417,19 +407,173 @@ h3{
     font-size: 4vw;
 }
 
-#redbubble{
-    position: relative;
-    font-size: 6vw;
-    float: right;
-    right: 12vw;
-    transition: 0.5s ease-in-out;
-    color: red;
+#shopSection{
+    width: 100%;
+    display: block;
 }
 
-#redbubble::after{
-    color: red;
+#shopDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+
+.shopItem{
+    border: solid 1px black;
+    flex-basis: 32.333333%;
+    overflow: hidden;
+}
+
+.shopItem img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+}
+
+.shopItem p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.shopItem button{
+    margin: 15px;
+}
+
+.buyBtn{
+    cursor: pointer;
+    height: 30px;
+    font-size: 20px;
+    background-color:rgb(224, 189, 99);
+}
+
+#cartBtn{
+    width: 70px;
+    right: 50px;
+    position: absolute;
+    display: inline-block;
+    right: 5%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+#cartBtn:hover {
+    color:rgb(195, 161, 77);
+}
+
+#cartSection{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#cartHide{
+    float: right;
+    top: 20px;
+    right: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+#cartText{
+    text-align: center;
+    font-size: 80px;
+    margin: 10px;
+    height: 90px;
+    color: rgb(195, 161, 77);
+}
+
+#cartDiv{
+    border: 1px solid black;
+    width: 45%;
+    padding: 20px;
+    padding-top: 20px;
+    height: 70%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.cartRow{
+    padding: 20px 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 2px solid black ;
+    font-size: 1.5vw;
+    align-items: center;
+}
+
+.cartItemName{
+    height: fit-content;
+    max-width: 140px;
+}
+
+.removeBtn{
+    height: 40px;
+    margin: 20px 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.cartRow img{
+    height: 150px;
+}
+
+.quantInput{
+    width: 50px;
+}
+
+.quantInput:invalid {
     background-color: red;
-    height: 10px;
+}
+
+.cartRow p{
+    font-size: 100%;
+}
+
+.quantInput{
+    margin: 20px 0;
+    height: 40px;
+    font-size: 20px;
+}
+
+#checkoutBtn{
+    position: relative;
+    height: 50px;
+    font-size: 30px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    background-color:rgb(224, 189, 99);
+}
+
+#totalPrice{
+    font-size: 1.5vw;
+    position: relative;
+    width: fit-content;
+    margin-left: 50px;
 }
 
 #contactDiv{
@@ -486,6 +630,13 @@ input{
 input[type=text]:focus{
     outline: none;
     border-bottom: solid rgb(218, 192, 126);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    width: 25px;
+    height: 40px;
+    opacity: 1;
+    cursor: pointer;
 }
 
 #nameIn{
@@ -571,6 +722,21 @@ h6{
     margin: 0;
 }
 
+#checkoutP {
+    width: fit-content;
+    font-size: 3vw;
+}
+
+#checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myNum {
+    font-size: 3vw;
+}
+
 footer{
     bottom: 0;
     position: relative;
@@ -617,7 +783,7 @@ footer a{
         margin: 0;
         padding: 0;
         overflow: hidden;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }
 
     nav ul{
@@ -634,7 +800,6 @@ footer a{
         overflow: hidden;
         transition: ease-in-out 1s;
     }
-
 
     nav ul li{
         width: 100%;
@@ -737,6 +902,7 @@ footer a{
         margin-bottom: 50px;
     }
 
+
     #gallerylink{
         width: 70%;
         height: 30vw;
@@ -763,6 +929,56 @@ footer a{
 
     .modal img{
         width: 60%;
+    }
+
+    .shopItem{
+        flex-basis: 100%;
+    }
+
+    #shopDiv{
+        padding-top: 0;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    #cartDiv{
+        width: 80%;
+        padding-top: 25px;
+    }
+
+    #cartHide{
+        margin-right: 0;
+    }
+
+    #cartBtn{
+        position:static;
+        transform: translateX(0);
+        right: 0;
+        left: 0;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: 70%;
+        margin-right: 0;
+    }
+
+    .cartRow img {
+        height: 60px;
+    }
+
+    .cartRow {
+        height: 90px;
+    }
+
+    .quantInput{
+        width: 40px;
+    }
+
+    .cartRow p{
+        font-size: 15px;
+    }
+
+    #totalPrice{
+        font-size: 20px;
     }
 
     #contactDiv{

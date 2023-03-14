@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/a8926b4801.js" crossorigin="anonymous"></script>
-    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/shop.js"></script>
     <title>Yanver Art</title>
     <link rel="icon" type="image/x-icon" href="/images/webicon.png">
 </head>
@@ -18,9 +18,9 @@
             <ul id="menuList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About me</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About me</a></li>
             </ul>
             <button class="navburger" aria-label="Main Menu">
                 <svg width="60" height="60" viewBox="0 0 100 100">
@@ -31,10 +31,74 @@
             </button>
         </nav>
     </header>
-    <div id="shopdiv">
-        <h3>Purchase my items at</h3>
-        <a href="https://www.redbubble.com/shop/yanver" id="redbubble">Redbubble</a>
-    </div>
+    <section id="shopSection">
+        <i class="fa-solid fa-cart-shopping fa-3x" id="cartBtn"></i>
+        <div id="shopDiv">
+            <div class="shopItem">
+                <img src="images/products/anyparent.jpg" class="productImage" alt="">
+                <p class="productName">Anyone Can Be a Parent Sticker</p>
+                <p class="productPrice">69 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/bubbly.jpg" class="productImage" alt="">
+                <p class="productName">Bubbly on the Inside Sticker</p>
+                <p class="productPrice">99 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/Meray sticker.jpg" class="productImage" alt="">
+                <p class="productName">Meray Sticker</p>
+                <p class="productPrice">50 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/Asian Unicorn.jpg" class="productImage" alt="">
+                <p class="productName">Asian Unicorn Sticker</p>
+                <p class="productPrice">130 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/igiveawhoop.jpg" class="productImage" alt="">
+                <p class="productName">I Give A Whoop Sticker</p>
+                <p class="productPrice">120 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/save the manaties.jpg" class="productImage" alt="">
+                <p class="productName">Save The Manities Sticker</p>
+                <p class="productPrice">89 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/hoosier frog.jpg" class="productImage" alt="">
+                <p class="productName">Hoosier Frog Sticker</p>
+                <p class="productPrice">89 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/young on the inside.jpg" class="productImage" alt="">
+                <p class="productName">Young On the Inside Sticker</p>
+                <p class="productPrice">79 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+            <div class="shopItem">
+                <img src="images/products/hello.jpg" class="productImage" alt="">
+                <p class="productName">Hello Sticker</p>
+                <p class="productPrice">69 kr</p>
+                <button class="buyBtn">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="cartSection">
+        <p id="cartText">Cart</p>
+        <div id="cartDiv">
+            <button id="cartHide">X</button>
+            <p id="totalPrice">No Items In Cart</p>
+            <button id="checkoutBtn">to checkout</button>
+            <button id="clearBtn">Clear Cart</button>
+        </div>
+    </section>
     <footer>
         <div class="fcolumn1">
             <ul class="flinks">

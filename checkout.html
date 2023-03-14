@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/a8926b4801.js" crossorigin="anonymous"></script>
-    <script defer src="scripts/main.js"></script>
     <title>Yanver Art</title>
     <link rel="icon" type="image/x-icon" href="/images/webicon.png">
 </head>
@@ -31,22 +30,16 @@
             </button>
         </nav>
     </header>
-    <div id="contactDiv">
-        <div id="contactInfo">
-            <h5>Contact Me</h5>
-            <p>You can reach me on <a href="https://www.instagram.com/yanver_art/">Instagram</a>, 
-                <a href="https://www.facebook.com/jonssonveronica/">Facebook</a> or send an email
-                with the form to the right :)
-            </p>
-        </div>
-        <form id="contactForm">
-            <input type="text" id="nameIn" placeholder="Name">
-            <input type="text" id="mailIn" placeholder="Email">
-            <h4>Message</h4>
-            <textarea name="Message" id="messageIn" cols="30" rows="10"></textarea>
-            <button type="submit" id="sendBtn">Send</button>
-        </form>
+    <div id="checkout">
+        <p id="checkoutP"></p>
+        <img src="https://www.swish.nu/img/swish-logotype.829dad15.svg" alt="swisha">
+        <p id="myNum">076-557-04-42</p>
     </div>
+    
+    <script>
+        let checkoutP = document.getElementById("checkoutP")
+        checkoutP.innerHTML = sessionStorage.getItem("price")
+    </script><h3 id="payAmout"></h3>
     <footer>
         <div class="fcolumn1">
             <ul class="flinks">
