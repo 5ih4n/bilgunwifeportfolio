@@ -50,7 +50,6 @@ function ready() {
 
     checkout.onclick = () => {
         sessionStorage.setItem("price", price.innerHTML);
-        console.log(price.innerHTML);
         window.location.href = ("checkout.html")
     }
 
@@ -124,7 +123,7 @@ function updateCart() {
         let quant = cartRow.getElementsByClassName("quantInput")[0];
         let quantValue = quant.value;
         total += priceFloat * quantValue;
-        cartQuant = +quantValue + +cartQuant;
+        cartQuant = parseFloat(quantValue)  + parseFloat(cartQuant) ;
     }
     cartBtn.innerText = cartQuant;
     if(total == 0) {

@@ -20,7 +20,6 @@ images.forEach((image) => {
         modal.classList.add("appear");
         modalImg.src = image.src;
         modalTxt.innerHTML = image.alt;
-        console.log("pung");
     });
     modalContent.addEventListener("click", () => {
         modal.classList.remove("appear");
